@@ -1,0 +1,199 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {},
+    ".NETCoreApp,Version=v9.0/win-x64": {
+      "Orb Login Converter/1.0.0": {
+        "dependencies": {
+          "KGySoft.Drawing.Core": "9.0.0-rc.1",
+          "KGySoft.Drawing.SkiaSharp": "9.0.0-rc.1",
+          "Microsoft.NET.ILLink.Tasks": "9.0.0",
+          "OpenCvSharp4": "4.10.0.20241108",
+          "OpenCvSharp4.runtime.win": "4.10.0.20241108",
+          "SkiaSharp": "3.118.0-preview.2.3",
+          "DALib": "0.1.0.0"
+        },
+        "runtime": {
+          "Orb Login Converter.dll": {}
+        }
+      },
+      "KGySoft.CoreLibraries/9.0.0-preview.1": {
+        "runtime": {
+          "lib/net9.0/KGySoft.CoreLibraries.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        }
+      },
+      "KGySoft.Drawing.Core/9.0.0-rc.1": {
+        "dependencies": {
+          "KGySoft.CoreLibraries": "9.0.0-preview.1"
+        },
+        "runtime": {
+          "lib/net8.0/KGySoft.Drawing.Core.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        }
+      },
+      "KGySoft.Drawing.SkiaSharp/9.0.0-rc.1": {
+        "dependencies": {
+          "KGySoft.Drawing.Core": "9.0.0-rc.1",
+          "SkiaSharp": "3.118.0-preview.2.3"
+        },
+        "runtime": {
+          "lib/net5.0/KGySoft.Drawing.SkiaSharp.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.0": {},
+      "OpenCvSharp4/4.10.0.20241108": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.10.0.20241108": {
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4100_64.dll": {
+            "fileVersion": "2024.5.0.0"
+          }
+        }
+      },
+      "SkiaSharp/3.118.0-preview.2.3": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.118.0-preview.2.3",
+          "SkiaSharp.NativeAssets.macOS": "3.118.0-preview.2.3"
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "assemblyVersion": "3.118.0.0",
+            "fileVersion": "3.118.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.118.0-preview.2.3": {},
+      "SkiaSharp.NativeAssets.Win32/3.118.0-preview.2.3": {
+        "native": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "DALib/0.1.0.0": {
+        "runtime": {
+          "DALib.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Orb Login Converter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KGySoft.CoreLibraries/9.0.0-preview.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zk7OAAohNrXuqCu+/kbZ1DBgretIouwQlZ/cjUmTWqSpEkpUVCyk49QyqU9pwuz1x89DXInznbz31bcyvlqPjQ==",
+      "path": "kgysoft.corelibraries/9.0.0-preview.1",
+      "hashPath": "kgysoft.corelibraries.9.0.0-preview.1.nupkg.sha512"
+    },
+    "KGySoft.Drawing.Core/9.0.0-rc.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lrg0m5Am/pgY//JfKmWmBjXXqnkEfXq/woVeToHJtoCPb7gKEb6srz1Qxe7su2xitUJFuh/FhsmJzTiU3rJp/Q==",
+      "path": "kgysoft.drawing.core/9.0.0-rc.1",
+      "hashPath": "kgysoft.drawing.core.9.0.0-rc.1.nupkg.sha512"
+    },
+    "KGySoft.Drawing.SkiaSharp/9.0.0-rc.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L+2aXYsPSsg8xqpXW6V2FBdpgS0tbpUXkXnZ0hZhYDXJRVjpU5wXnwxLJbKNqhhIlcsLReBYs5lNxt64qWyLrg==",
+      "path": "kgysoft.drawing.skiasharp/9.0.0-rc.1",
+      "hashPath": "kgysoft.drawing.skiasharp.9.0.0-rc.1.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zAwp213evC3UkimtVXRb+Dlgc/40QG145nmZDtp2LO9zJJMfrp+i/87BnXN7tRXEA4liyzdFkjqG1HE8/RPb4A==",
+      "path": "microsoft.net.illink.tasks/9.0.0",
+      "hashPath": "microsoft.net.illink.tasks.9.0.0.nupkg.sha512"
+    },
+    "OpenCvSharp4/4.10.0.20241108": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4Lw57NQzOaR0fi9et7GMWB1rpdGzGuNgXHXy45Gltvt8SizQLOGufUonNF9Z+9mo3dcwGC/mL4w5NBgJCqZdHQ==",
+      "path": "opencvsharp4/4.10.0.20241108",
+      "hashPath": "opencvsharp4.4.10.0.20241108.nupkg.sha512"
+    },
+    "OpenCvSharp4.runtime.win/4.10.0.20241108": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ae2dwel83tqKlAs45D3KYncoJHRzj1ArEESa6wz7FS3tYu37JDIb5yoMIZPzlkx3Gx2S1BjUrClfXbBHmVh5g==",
+      "path": "opencvsharp4.runtime.win/4.10.0.20241108",
+      "hashPath": "opencvsharp4.runtime.win.4.10.0.20241108.nupkg.sha512"
+    },
+    "SkiaSharp/3.118.0-preview.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y/dkGf9iIeP9Tk6Bv1CGMoJD65NaRXSwTQ0ZwfNEhtb/oAHrOTPNcea2b5lD48SunwghDMLPBiDtP41WwIIptg==",
+      "path": "skiasharp/3.118.0-preview.2.3",
+      "hashPath": "skiasharp.3.118.0-preview.2.3.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/3.118.0-preview.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nFgZlGZF+W/KdsboHHc/5dxWA4MxXbSkFwjOYWIQtVuqAC/NCf+y5z1Muhqp9wc7MDMADRyUis7yFVkgMFN2Fw==",
+      "path": "skiasharp.nativeassets.macos/3.118.0-preview.2.3",
+      "hashPath": "skiasharp.nativeassets.macos.3.118.0-preview.2.3.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/3.118.0-preview.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eiCGyg8WW7poEFxjPilSBIYVBsLb0cfYdHZeSaLeeUiVh8HUF0jPznp6QtGk4M55S9nvDERUZh6NXvjBbHPrZg==",
+      "path": "skiasharp.nativeassets.win32/3.118.0-preview.2.3",
+      "hashPath": "skiasharp.nativeassets.win32.3.118.0-preview.2.3.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "DALib/0.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

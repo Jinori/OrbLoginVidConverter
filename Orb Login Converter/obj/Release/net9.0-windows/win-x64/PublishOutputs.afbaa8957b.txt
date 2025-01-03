@@ -1,0 +1,4 @@
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Release\Orb Login Converter.pdb
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Release\DALib.pdb
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Release\DALib.xml
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Release\Orb Login Converter.exe

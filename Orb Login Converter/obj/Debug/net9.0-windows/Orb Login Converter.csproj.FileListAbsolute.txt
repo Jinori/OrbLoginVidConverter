@@ -1,0 +1,37 @@
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\Orb Login Converter.exe
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\Orb Login Converter.deps.json
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\Orb Login Converter.runtimeconfig.json
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\Orb Login Converter.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\Orb Login Converter.pdb
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\OpenCvSharp.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\SkiaSharp.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg4100_64.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg4100.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\DALib.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\DALib.pdb
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\DALib.xml
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.csproj.AssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter_MarkupCompile.cache
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.g.resources
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.AssemblyInfoInputs.cache
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.AssemblyInfo.cs
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Logi.80FB50E6.Up2Date
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\refint\Orb Login Converter.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.pdb
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\Orb Login Converter.genruntimeconfig.cache
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\obj\Debug\net9.0-windows\ref\Orb Login Converter.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\KGySoft.CoreLibraries.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\KGySoft.Drawing.Core.dll
+C:\Users\Michael\Documents\GitHub\OrbLoginConverter\Orb Login Converter\Orb Login Converter\bin\Debug\net9.0-windows\KGySoft.Drawing.SkiaSharp.dll

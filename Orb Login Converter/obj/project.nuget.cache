@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "8/QBi6TNY9E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Michael\\Documents\\GitHub\\OrbLoginVidConverter\\Orb Login Converter\\Orb Login Converter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Michael\\.nuget\\packages\\kgysoft.corelibraries\\9.0.0-preview.1\\kgysoft.corelibraries.9.0.0-preview.1.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\kgysoft.drawing.core\\9.0.0-rc.1\\kgysoft.drawing.core.9.0.0-rc.1.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\kgysoft.drawing.skiasharp\\9.0.0-rc.1\\kgysoft.drawing.skiasharp.9.0.0-rc.1.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\opencvsharp4\\4.10.0.20241108\\opencvsharp4.4.10.0.20241108.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\opencvsharp4.runtime.win\\4.10.0.20241108\\opencvsharp4.runtime.win.4.10.0.20241108.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\skiasharp\\3.118.0-preview.2.3\\skiasharp.3.118.0-preview.2.3.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.118.0-preview.2.3\\skiasharp.nativeassets.macos.3.118.0-preview.2.3.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.118.0-preview.2.3\\skiasharp.nativeassets.win32.3.118.0-preview.2.3.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Michael\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

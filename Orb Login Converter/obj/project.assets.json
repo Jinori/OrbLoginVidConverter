@@ -1,0 +1,564 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "KGySoft.CoreLibraries/9.0.0-preview.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/KGySoft.CoreLibraries.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/KGySoft.CoreLibraries.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "KGySoft.Drawing.Core/9.0.0-rc.1": {
+        "type": "package",
+        "dependencies": {
+          "KGySoft.CoreLibraries": "9.0.0-preview.1"
+        },
+        "compile": {
+          "lib/net8.0/KGySoft.Drawing.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/KGySoft.Drawing.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "KGySoft.Drawing.SkiaSharp/9.0.0-rc.1": {
+        "type": "package",
+        "dependencies": {
+          "KGySoft.Drawing.Core": "9.0.0-rc.1",
+          "SkiaSharp": "2.88.7"
+        },
+        "compile": {
+          "lib/net5.0/KGySoft.Drawing.SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/KGySoft.Drawing.SkiaSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4/4.10.0.20241108": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.10.0.20241108": {
+        "type": "package",
+        "build": {
+          "build/net5.0/OpenCvSharp4.runtime.win.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4100_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4100.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp/3.118.0-preview.2.3": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.118.0-preview.2.3",
+          "SkiaSharp.NativeAssets.macOS": "3.118.0-preview.2.3"
+        },
+        "compile": {
+          "ref/net8.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/3.118.0-preview.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.118.0-preview.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KGySoft.CoreLibraries/9.0.0-preview.1": {
+      "sha512": "zk7OAAohNrXuqCu+/kbZ1DBgretIouwQlZ/cjUmTWqSpEkpUVCyk49QyqU9pwuz1x89DXInznbz31bcyvlqPjQ==",
+      "type": "package",
+      "path": "kgysoft.corelibraries/9.0.0-preview.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon64.png",
+        "LICENSE",
+        "kgysoft.corelibraries.9.0.0-preview.1.nupkg.sha512",
+        "kgysoft.corelibraries.nuspec",
+        "lib/net35/KGySoft.CoreLibraries.dll",
+        "lib/net35/KGySoft.CoreLibraries.xml",
+        "lib/net40/KGySoft.CoreLibraries.dll",
+        "lib/net40/KGySoft.CoreLibraries.xml",
+        "lib/net45/KGySoft.CoreLibraries.dll",
+        "lib/net45/KGySoft.CoreLibraries.xml",
+        "lib/net472/KGySoft.CoreLibraries.dll",
+        "lib/net472/KGySoft.CoreLibraries.xml",
+        "lib/net5.0/KGySoft.CoreLibraries.dll",
+        "lib/net5.0/KGySoft.CoreLibraries.xml",
+        "lib/net6.0/KGySoft.CoreLibraries.dll",
+        "lib/net6.0/KGySoft.CoreLibraries.xml",
+        "lib/net7.0/KGySoft.CoreLibraries.dll",
+        "lib/net7.0/KGySoft.CoreLibraries.xml",
+        "lib/net8.0/KGySoft.CoreLibraries.dll",
+        "lib/net8.0/KGySoft.CoreLibraries.xml",
+        "lib/net9.0/KGySoft.CoreLibraries.dll",
+        "lib/net9.0/KGySoft.CoreLibraries.xml",
+        "lib/netcoreapp2.0/KGySoft.CoreLibraries.dll",
+        "lib/netcoreapp2.0/KGySoft.CoreLibraries.xml",
+        "lib/netcoreapp2.1/KGySoft.CoreLibraries.dll",
+        "lib/netcoreapp2.1/KGySoft.CoreLibraries.xml",
+        "lib/netcoreapp3.0/KGySoft.CoreLibraries.dll",
+        "lib/netcoreapp3.0/KGySoft.CoreLibraries.xml",
+        "lib/netstandard2.0/KGySoft.CoreLibraries.dll",
+        "lib/netstandard2.0/KGySoft.CoreLibraries.xml",
+        "lib/netstandard2.1/KGySoft.CoreLibraries.dll",
+        "lib/netstandard2.1/KGySoft.CoreLibraries.xml",
+        "readme.md",
+        "readme.txt"
+      ]
+    },
+    "KGySoft.Drawing.Core/9.0.0-rc.1": {
+      "sha512": "lrg0m5Am/pgY//JfKmWmBjXXqnkEfXq/woVeToHJtoCPb7gKEb6srz1Qxe7su2xitUJFuh/FhsmJzTiU3rJp/Q==",
+      "type": "package",
+      "path": "kgysoft.drawing.core/9.0.0-rc.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon64.png",
+        "LICENSE",
+        "kgysoft.drawing.core.9.0.0-rc.1.nupkg.sha512",
+        "kgysoft.drawing.core.nuspec",
+        "lib/net35/KGySoft.Drawing.Core.dll",
+        "lib/net35/KGySoft.Drawing.Core.xml",
+        "lib/net40/KGySoft.Drawing.Core.dll",
+        "lib/net40/KGySoft.Drawing.Core.xml",
+        "lib/net45/KGySoft.Drawing.Core.dll",
+        "lib/net45/KGySoft.Drawing.Core.xml",
+        "lib/net46/KGySoft.Drawing.Core.dll",
+        "lib/net46/KGySoft.Drawing.Core.xml",
+        "lib/net5.0/KGySoft.Drawing.Core.dll",
+        "lib/net5.0/KGySoft.Drawing.Core.xml",
+        "lib/net6.0/KGySoft.Drawing.Core.dll",
+        "lib/net6.0/KGySoft.Drawing.Core.xml",
+        "lib/net8.0/KGySoft.Drawing.Core.dll",
+        "lib/net8.0/KGySoft.Drawing.Core.xml",
+        "lib/netcoreapp3.0/KGySoft.Drawing.Core.dll",
+        "lib/netcoreapp3.0/KGySoft.Drawing.Core.xml",
+        "lib/netstandard2.0/KGySoft.Drawing.Core.dll",
+        "lib/netstandard2.0/KGySoft.Drawing.Core.xml",
+        "lib/netstandard2.1/KGySoft.Drawing.Core.dll",
+        "lib/netstandard2.1/KGySoft.Drawing.Core.xml",
+        "readme.md",
+        "readme.txt"
+      ]
+    },
+    "KGySoft.Drawing.SkiaSharp/9.0.0-rc.1": {
+      "sha512": "L+2aXYsPSsg8xqpXW6V2FBdpgS0tbpUXkXnZ0hZhYDXJRVjpU5wXnwxLJbKNqhhIlcsLReBYs5lNxt64qWyLrg==",
+      "type": "package",
+      "path": "kgysoft.drawing.skiasharp/9.0.0-rc.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon64.png",
+        "LICENSE",
+        "kgysoft.drawing.skiasharp.9.0.0-rc.1.nupkg.sha512",
+        "kgysoft.drawing.skiasharp.nuspec",
+        "lib/net462/KGySoft.Drawing.SkiaSharp.dll",
+        "lib/net462/KGySoft.Drawing.SkiaSharp.xml",
+        "lib/net5.0/KGySoft.Drawing.SkiaSharp.dll",
+        "lib/net5.0/KGySoft.Drawing.SkiaSharp.xml",
+        "lib/netcoreapp3.0/KGySoft.Drawing.SkiaSharp.dll",
+        "lib/netcoreapp3.0/KGySoft.Drawing.SkiaSharp.xml",
+        "lib/netstandard2.0/KGySoft.Drawing.SkiaSharp.dll",
+        "lib/netstandard2.0/KGySoft.Drawing.SkiaSharp.xml"
+      ]
+    },
+    "OpenCvSharp4/4.10.0.20241108": {
+      "sha512": "4Lw57NQzOaR0fi9et7GMWB1rpdGzGuNgXHXy45Gltvt8SizQLOGufUonNF9Z+9mo3dcwGC/mL4w5NBgJCqZdHQ==",
+      "type": "package",
+      "path": "opencvsharp4/4.10.0.20241108",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.10.0.20241108.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.10.0.20241108": {
+      "sha512": "0ae2dwel83tqKlAs45D3KYncoJHRzj1ArEESa6wz7FS3tYu37JDIb5yoMIZPzlkx3Gx2S1BjUrClfXbBHmVh5g==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.10.0.20241108",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.10.0.20241108.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg4100_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg4100.dll"
+      ]
+    },
+    "SkiaSharp/3.118.0-preview.2.3": {
+      "sha512": "Y/dkGf9iIeP9Tk6Bv1CGMoJD65NaRXSwTQ0ZwfNEhtb/oAHrOTPNcea2b5lD48SunwghDMLPBiDtP41WwIIptg==",
+      "type": "package",
+      "path": "skiasharp/3.118.0-preview.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.dll",
+        "lib/net8.0-android34.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.xml",
+        "lib/net8.0-ios17.0/SkiaSharp.dll",
+        "lib/net8.0-ios17.0/SkiaSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.pdb",
+        "lib/net8.0-macos14.0/SkiaSharp.dll",
+        "lib/net8.0-macos14.0/SkiaSharp.pdb",
+        "lib/net8.0-tizen7.0/SkiaSharp.dll",
+        "lib/net8.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net8.0-tvos17.0/SkiaSharp.dll",
+        "lib/net8.0-tvos17.0/SkiaSharp.pdb",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.pdb",
+        "lib/net8.0/SkiaSharp.dll",
+        "lib/net8.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "ref/net462/SkiaSharp.dll",
+        "ref/net6.0/SkiaSharp.dll",
+        "ref/net8.0-android34.0/SkiaSharp.dll",
+        "ref/net8.0-ios17.0/SkiaSharp.dll",
+        "ref/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "ref/net8.0-macos14.0/SkiaSharp.dll",
+        "ref/net8.0-tizen7.0/SkiaSharp.dll",
+        "ref/net8.0-tvos17.0/SkiaSharp.dll",
+        "ref/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "ref/net8.0/SkiaSharp.dll",
+        "ref/netstandard2.0/SkiaSharp.dll",
+        "ref/netstandard2.1/SkiaSharp.dll",
+        "skiasharp.3.118.0-preview.2.3.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.macOS/3.118.0-preview.2.3": {
+      "sha512": "nFgZlGZF+W/KdsboHHc/5dxWA4MxXbSkFwjOYWIQtVuqAC/NCf+y5z1Muhqp9wc7MDMADRyUis7yFVkgMFN2Fw==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.macos/3.118.0-preview.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net8.0-macos14.0/SkiaSharp.NativeAssets.macOS.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-macos14.0/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "skiasharp.nativeassets.macos.3.118.0-preview.2.3.nupkg.sha512",
+        "skiasharp.nativeassets.macos.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/3.118.0-preview.2.3": {
+      "sha512": "eiCGyg8WW7poEFxjPilSBIYVBsLb0cfYdHZeSaLeeUiVh8HUF0jPznp6QtGk4M55S9nvDERUZh6NXvjBbHPrZg==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/3.118.0-preview.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.3.118.0-preview.2.3.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "KGySoft.Drawing.Core >= 9.0.0-rc.1",
+      "KGySoft.Drawing.SkiaSharp >= 9.0.0-rc.1",
+      "OpenCvSharp4 >= 4.10.0.20241108",
+      "OpenCvSharp4.runtime.win >= 4.10.0.20241108",
+      "SkiaSharp >= 3.118.0-preview.2.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Michael\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Michael\\Documents\\GitHub\\OrbLoginVidConverter\\Orb Login Converter\\Orb Login Converter.csproj",
+      "projectName": "Orb Login Converter",
+      "projectPath": "C:\\Users\\Michael\\Documents\\GitHub\\OrbLoginVidConverter\\Orb Login Converter\\Orb Login Converter.csproj",
+      "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Michael\\Documents\\GitHub\\OrbLoginVidConverter\\Orb Login Converter\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Michael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "dependencies": {
+          "KGySoft.Drawing.Core": {
+            "target": "Package",
+            "version": "[9.0.0-rc.1, )"
+          },
+          "KGySoft.Drawing.SkiaSharp": {
+            "target": "Package",
+            "version": "[9.0.0-rc.1, )"
+          },
+          "OpenCvSharp4": {
+            "target": "Package",
+            "version": "[4.10.0.20241108, )"
+          },
+          "OpenCvSharp4.runtime.win": {
+            "target": "Package",
+            "version": "[4.10.0.20241108, )"
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[3.118.0-preview.2.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+﻿<Window x:Class="Orb_Login_Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Orb Login Converter"
+        Height="450"
+        Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#222222">
+    
+    <!-- Window Resources -->
+    <Window.Resources>
+        <!-- Title Bar Button Style -->
+        <Style x:Key="TitleBarButtonStyle" TargetType="Button">
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <!-- TextBox Style for Softer Background -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#2E2E2E" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="BorderBrush" Value="#555555" />
+        </Style>
+
+        <!-- Button Style -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#444444" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+            <Setter Property="BorderBrush" Value="#666666" />
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Custom Title Bar -->
+        <DockPanel Background="#333333" Height="30" VerticalAlignment="Top" MouseDown="TitleBar_MouseDown">
+            <!-- App Icon -->
+            <Image Source="pack://application:,,,/favicon.ico"
+                   Width="20"
+                   Height="20"
+                   VerticalAlignment="Center"
+                   Margin="5,0,5,0" />
+
+            <!-- App Title -->
+            <TextBlock Text="Orb Legend Login Video Converter"
+                       Foreground="#FFFFFF"
+                       VerticalAlignment="Center"
+                       FontWeight="Bold" />
+
+            <!-- Window Controls -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="—"
+                        Width="30"
+                        Height="30"
+                        Background="#444444"
+                        Foreground="#FFFFFF"
+                        Click="MinimizeButton_Click"
+                        Style="{StaticResource TitleBarButtonStyle}" />
+                <Button Content="□"
+                        Width="30"
+                        Height="30"
+                        Background="#444444"
+                        Foreground="#FFFFFF"
+                        Click="MaximizeButton_Click"
+                        Style="{StaticResource TitleBarButtonStyle}" />
+                <Button Content="X"
+                        Width="30"
+                        Height="30"
+                        Background="#FF5555"
+                        Foreground="#FFFFFF"
+                        Click="CloseButton_Click"
+                        Style="{StaticResource TitleBarButtonStyle}" />
+            </StackPanel>
+        </DockPanel>
+
+        <!-- Main Application UI -->
+        <Grid Margin="10,40,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Video Selection Section -->
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+                <Button Content="Load Video" Width="100" Click="LoadVideo_Click" />
+                <TextBox Name="VideoPathTextBox" IsReadOnly="True" Margin="10,0,0,0" Width="600" />
+            </StackPanel>
+
+            <!-- Log Section -->
+            <TextBox Name="LogTextBox" Grid.Row="1" Margin="0,0,0,10" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" />
+
+            <!-- Action Button Section -->
+            <Button Content="Process Video" Grid.Row="2" Height="40" Click="ProcessVideo_Click" />
+        </Grid>
+    </Grid>
+</Window>
