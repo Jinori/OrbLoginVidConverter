@@ -149,7 +149,7 @@ namespace Orb_Login_Converter
 
                 if (capture.Read(frame))
                 {
-                    var frameFilename = Path.Combine(framesFolder, $"frame_{i + 1:02d}.png");
+                    var frameFilename = Path.Combine(framesFolder, $"frame_{i + 1}.png");
                     frame.SaveImage(frameFilename);
                     Log($"Frame saved: {frameFilename}");
                 }
@@ -178,8 +178,20 @@ namespace Orb_Login_Converter
         // Applies the mask to the frames
         private void ApplyMaskToFrames(string framesFolder, string outputFolder, SKBitmap mask, int width, int height)
         {
-            foreach (var filePath in Directory.GetFiles(framesFolder, "*.png"))
+            var frameFiles = Directory.GetFiles(framesFolder, "*.png")
+                .OrderBy(f =>
+                {
+                    var name = Path.GetFileNameWithoutExtension(f);
+                    var parts = name.Split('_');
+                    if (parts.Length > 1 && int.TryParse(parts[1], out int num))
+                        return num;
+                    return int.MaxValue;
+                })
+                .ToList();
+
+            for (int i = 0; i < frameFiles.Count; i++)
             {
+                var filePath = frameFiles[i];
                 using var original = SKBitmap.Decode(filePath);
                 using var resizedFrame = original.Resize(new SKImageInfo(width, height), SKFilterQuality.High);
                 using var maskedImage = new SKBitmap(width, height, SKColorType.Rgba8888, SKAlphaType.Premul);
@@ -234,21 +246,29 @@ namespace Orb_Login_Converter
         private List<SKImage?> LoadImagesFromDirectory(string directory)
         {
             return Directory.GetFiles(directory, "*.png")
-                            .Select(filePath =>
-                            {
-                                try
-                                {
-                                    using var data = SKData.Create(filePath);
-                                    return SKImage.FromEncodedData(data);
-                                }
-                                catch (Exception ex)
-                                {
-                                    Log($"Error loading image {filePath}: {ex.Message}");
-                                    return null;
-                                }
-                            })
-                            .Where(image => image != null)
-                            .ToList();
+                .OrderBy(f =>
+                {
+                    var name = Path.GetFileNameWithoutExtension(f);
+                    var parts = name.Split('_');
+                    if (parts.Length > 1 && int.TryParse(parts[1], out int num))
+                        return num;
+                    return int.MaxValue; // fallback for unexpected names
+                })
+                .Select(filePath =>
+                {
+                    try
+                    {
+                        using var data = SKData.Create(filePath);
+                        return SKImage.FromEncodedData(data);
+                    }
+                    catch (Exception ex)
+                    {
+                        Log($"Error loading image {filePath}: {ex.Message}");
+                        return null;
+                    }
+                })
+                .Where(image => image != null)
+                .ToList();
         }
     }
 }
